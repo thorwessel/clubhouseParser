@@ -1,0 +1,30 @@
+export interface Ticket {
+    id: number;
+    name: string;
+    type: string;
+    requester: string;
+    owners: string;
+    description: string;
+    is_completed: boolean;
+    created_at: string;
+    started_at: string;
+    updated_at: string;
+    moved_at: string;
+    completed_at: string;
+    estimate?: any;
+    external_ticket_count: number;
+    external_tickets?: any;
+    is_blocked: boolean;
+    is_a_blocker: boolean;
+    due_date?: any;
+    labels: string;
+    tasks?: any;
+    state: string;
+    epic_id?: any;
+    epic?: any;
+    project_id: number;
+    project: string;
+    iteration_id: number;
+    iteration: string;
+    utc_offset: string;
+}
